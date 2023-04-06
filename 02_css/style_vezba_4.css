@@ -1,0 +1,36 @@
+/* <!-- Napraviti tematsku web stranicu koja sadrži:
+Centrirani naslov veličine h2, proizvoljno obojen
+Proizvoljno obojenu pozadinu
+Sliku uokvirenu dvolinijskim okvirom, gde boja okvira nije crna
+Sliku linkovati da nas vodi ka nekoj internet stranici
+Najmanje tri paragrafa proizvoljnog teksta
+Prvi i treći paragraf treba da:
+Budu obojeni istom bojom
+Imaju isti font i veličinu fonta
+Drugi paragraf treba da:
+Ima različitu boju od prvog i trećeg paragrafa
+Sadrži link ka nekoj web stranici obojen crvenom bojom
+Kada se mišem stane preko linka on postane zelene boje --> */
+h2{
+    text-align: center;
+    color: aqua;
+}
+body{
+    background-color: bisque;
+}
+div img{
+    border:  20px  double blue;
+    width: 400px;
+    height: 400px;
+}
+p:nth-of-type(odd){
+    color:  green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20px;
+}
+span a{
+    color: red;
+}
+span a:hover{
+    color: green;
+}

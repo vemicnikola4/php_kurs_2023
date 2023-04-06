@@ -1,0 +1,62 @@
+/* Naslov bude obojen u jednu boju
+Podnaslov bude obojen u drugu boju
+Paragrafi budu obojeni u treću boju
+Slika bude veličine 400px x 300px
+Link bude obojen u četvrtu boju
+Pozadinu stranice obojiti petom bojom
+Postaviti Arial za font na stranici
+Postaviti veličinu teksta da bude 20px */
+h1{
+    color: blue;
+}
+h2{
+    color: red;
+}
+img{
+    width: 400px;
+    height: 300px;
+    border: solid black 2px;
+
+}
+p{
+    color: green;
+    font-weight: 20px;
+}
+body{
+    background-color: lightcoral;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color:blue;
+}
+h1.centar{
+    text-align: center;
+}
+p.povecani_par{
+    font-size: 24px;
+    text-align: right;
+}
+.naslov_3{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: green;
+
+}
+a:hover{
+    color:yellow;
+}
+a:visited{
+    color:green;
+}
+h1.zeleno{
+    color: green;
+}
+h1.comic_sans{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+a:hover{
+    color: yellow;
+}
+a:visited{
+    color: green;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css sintaksa vazi za citavu stranicu */
+        p{
+            /* font-family:Arial, Helvetica, sans-serif; */
+            /*Pokusava prvo prvi pa drugi pa treci od specificnijih do opstijih*/
+            /*font-size: 20px;u htmlu postoje samo px pa je dovoljno samo da stavimo broj
+            color: red;*/
+            /* preporuka => svako navodjenje fonta se zavrsava sa generickim porodicama
+            ako brouser ne pronadje ove konkretne fontove prikaze najblize iz gen fontova sans serifjer ce se on svakako prikazati/.
+            -AKo je naziv fonta vise reci mora pod navodnicima */
+            font: 18px Arial, Helvetica, sans-serif;
+            /* moze i ovako da se pise
+            moze i background svojstvo na isti nacin tako */
+            /* background:blueviolet url('road_bicikla_visitor_crno_crvena_roa289pro.jpg') ; */
+            color: blueviolet;
+
+        }
+        .green{
+            color: green;
+        }
+        #yellow{
+            color: yellow;
+        }
+        div.main{
+            background:url('road_bicikla_visitor_crno_crvena_roa289pro.jpg')  no-repeat center; 
+        }
+        div a{/*predak i potomakcak i ako nije direktan potomak ako je nps unutar selekta*/
+            font-weight:bold;
+        }
+        div>a{/*samo direktne potomke*/
+            font-size: 30px;
+        }
+        div+p{/*gadjaj sve p koji su direktni rodjaci div taga odmah nakon ovog diva*/
+            font-style: italic;
+        }
+        div~p{/*gadjaj sve p koji su rodjaci div taga(ista linija)ne mora da bude direktan sused*/
+            font-size: 45px;
+        }
+        a:hover{/*Po pravilu treba da bude nakon active i visited*/
+            cursor: pointer;
+            background-color: lightgreen;
+        }
+        a:link{/*neposecen*/
+            color: blue;
+        }
+        a:visited{
+            color:red;
+        }
+        /* a :visited{
+            color:red;
+        }  bilo koji tag potomak a taga a koji je u ovom stanju
+        div.main a:visited{
+            a tag potomak diva klase main koji je u ovom stanju
+        }
+        */
+        a:active{/*kad ga kliknemo*/
+            color: black;
+        }
+        a::before{/*Sta pre svakog a linka zelimo da ubacimo*/
+            content: "-";
+        }
+        #p_1::first-letter{
+            font-size: 70px;
+        }
+        p:first-of-type{/*prvi potomak svog roditelja tog tipa */
+            border: dotted black;
+        }
+        /* p:last-child Bira svaki <p> tag koji je poslednji potomak svog roditelja */
+
+        p:nth-of-type(2){/*Bira svaki <p> tag koji je drugo dete svog roditelja */
+            border: solid green;
+        }
+        li:nth-child(2){/*li drugo dete svog rod*/
+            color: red;
+        }
+        li:nth-child(3n){/*svaki treci li dete svog rod*/
+            color: yellow;
+        }
+        /* even/odd => parno neparno */
+    </style>
+</head>
+<body>
+    <!-- **CSS
+    -nije pr jezik.
+    -definise izgled 
+    CSS deo se sastoji iz niza selektora.
+
+    Selektor može biti:
+**HTML element (tag),
+**Klasa HTML elemenata,
+       
+
+**Identifikaciona vrednost (ID) HTML elementa,
+Kombinatori,
+ Ako selektor sadrži više selektora, onda se koriste
+        kombinatori:
+Selektor potomaka (razmak),
+Selektor deteta (>),
+Selektor susednih rodjaka (+),
+Selektor rodjaka (~)
+
+Test primeri:
+div p
+div>p
+div+p
+div~p
+
+**Pseudo-selektori,
+    pseudo klase-: vec imamo neki el i menjamo ga u nekom posebnom stanju.
+    Mogu da se kombinuju
+    sa :: su pseudo elementi
+    ::after 
+    ::before
+    sta ce da se desi posle i pre ovihelemenata , sta zelimo da ubacimo
+
+**Pseudo-elementi,
+
+selektor i deklaracije(unutar {})
+svojstvo i vrednost
+
+**user agent stylesheat potice od brousera.
+
+clasa visa od elementa
+
+**DODAVANJE CSSa 
+    -<link rel="stylesheet" href="mystyle.css">(doadje se u headu htmla)
+    -interni css stavimo style tag unutar head taga u htmlu
+
+**kaskadditranje
+    -inline najveci priortet
+    -eksterni i unutr stilovi sto navedemo u head odeljku
+    -podrazumevani stilovi koje je definisao pretrazivac
+
+**important ponistava sve stilove koji su mozda visi od ovog.Cak i inline css pregazi.
+    p{
+        color: black!important;
+    }
+-->
+    <!-- moze ovako da skrolujes na dno stranici isl. Da skocis na neki deo stranice -->
+    <div class="main">
+        <div>
+            <span><a href="#p_1">Idi na poslednji paragraf</a></span>
+        </div>
+        <div>
+            <a href="https://color-hex.com">Za boje u cssu</a>
+        </div>
+        
+        <p class="green">Prvi paragraf</p>
+        <p id="yellow">Drugi paragraf</p>
+        <p >Treci paragraf</p>
+    </div>
+    <p id="p_1">Cetvrti paragraf direktni rodjak div taga italic</p>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+</body>
+</html>

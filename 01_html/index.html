@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Prva web stranica</title>        
+    </head>
+    <body>
+        <h1>Moj prvi naslov</h1>
+       
+        <!-- Formatiranje-Ok je da bude u istom redu sve dok je p kratak. B i i tagovi se skoro nikad ne pomeraju u novi red ok je da budu u istoj liniji. Sve dok nam je jasno gde se tag otvara i zatvara. 
+        -bitno da bude ok da bi nam bilo pregledno da li svaki tag ima zatvarajuci tag.
+        -->
+
+         <!-- ****** <B> == <strong></strong> <i></i> == <em></em> **** -->
+        <!-- <b></b> <i></i> Bold i italik tag -->
+        <!-- Kada bi hteli da p bude italik standardno je da prvo otvorimo p tag pa tag i a ne p unutar i taga. Trebamo teziti standardima 
+        -->
+        <div style="color:blue">
+            <p>Hello <b>World!!!</b></p>
+            <p><i>Drugi paragraf</i></p>
+        </div>
+        <p>Treci paragraf</p>
+        <!-- Div i spansu kontejneri za druge tagove
+            Div je blokovski element znaci da prelazi u novi red i zauzima celu sirinu
+            Span je kontejner ali inline
+         -->
+        <p>Span paragraf <span style="font-weight: bold;">boldovano</span></p>
+
+         <!-- *********DL TAG******* -->
+
+         <!-- descrtiption list  dt(defines terms/names) dd(describe)-->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Dark rosted</dd>
+            <dt>Tea</dt>
+            <dd>Herbal camoile</dd>
+            <dt>Juice</dt>
+            <dd>Nature fresh squizeed</dd>
+        </dl>
+
+        <!-- tagovi za sliku video audio 
+        <img src="" alt="">
+        <video src=""></video>
+        <iframe src="" frameborder="0"></iframe>
+        <audio src=""></audio> 
+        -->
+        <!-- UMETANJE SLIKA
+    
+    Windiws je case inssesitive.
+    Serveri su u linux ili centus?.. koji su case senssitive tako da nam je bitno da sliku pisemo ispravno 
+    Najcesce greske sa slikama su
+    -nevalidan path
+    -ili slovna greska
+    Pravilno je da img tag ima zavarajucu kosu crtu.
+    -->
+
+    <img src="road_bicikla_visitor_crno_crvena_roa289pro.jpg" alt="slika bicikla" style="width:300px; height:300px"/>
+
+    <!-- HIPERLINKOVI
+        target="_blank"=> nasa strana ostaje ziva a link se otvara u novom tabu.
+
+
+        **RELATIVE PUTANJE gde se fal nalazi u odnosu na file koji je koristi.
+        ..kod relativnih putanja za vracanje nivo iznad(folder iznad)
+        -uvek ih koristiti ukoliko je to moguce
+
+        **APSOLUTNA PUTANJA  Celokupna putanja do filea.
+        - zasto je apsolutna putanja losa kod domaceg jer je putanja na drugom racunaru drugacija od one na mom racunaru.
+        -izbegavati ako je moguce.
+        -ako korstimo tudje slicice naophodno je da ih preuzmemo jer ako navodimo ap put do njih oni u svakom trenutku mogu nesto da promene i vise nece raditi(domen isl.).
+     -->
+    <div>
+        <a href="strana" target="_blank">link ka it bootcamp</a>
+        <a href="strana_2.html" >strana2</a>
+    </div>
+    <!-- **HML dokumenti
+    ubl file? Koristi se za sve vrste transakcija u bankama u svetu.
+    -U xml file svaki tag ima poc i zavrsni tag.
+    Razlika je da xml nece da se izvrsi ako ima gresku. Lose ugnjezden lose naveden atrr.
+    Brouseri imaju neku svoju inteligenciju da cak i nepotpun html popunjava da bi korisnik dobio neki output. Ali da li ce to ispravno uraditi to je pitanje.
+
+    **XHTML ako struktura nije dobra    neprikazuje.
+    kada zelimo da prekontrolisemo html file kopiramo ga u xhtml file.
+    Neki elementi su obavezni (vidi prezentaciju).
+    mora da se ztvaraju tagovi da se pravilno ugnjezde itd
+    Ne radi se konstantno ali se radi.
+    Postoje raznorazni xhtml validatori koji pokazuju u kom redu tacno je greska u htmlu.
+    Tip odma zatvori tag pa onda pisi.
+    -->
+    </body>
+</html>

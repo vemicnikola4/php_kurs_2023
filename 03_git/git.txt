@@ -1,0 +1,29 @@
+1. Lokalno Verzionisanje
+
+2.Centralno verzionisanje
+    Mana : imamo centralni server pa moramo uvek da budemo online. Jedino cent server ima evidenciju o svim verzijama. Mi kada dohvatimo app sa servera dohvatamo poslednju verziju. 
+
+2.Distrubitivno verzionisanje
+    *Glavna ideja: Nema cent server vec su svi poezani racunari ravnopravni.
+    IMamo evidenc o svim verzijama. Kakokomuniciraju medjusobno svi su racunari ravnopravni. Pier network Torent.
+
+    Git 
+    sluzi da pravi neke verzije fajlova i sve radi na lokalu. Za Sluzi za Distrubitivno verziranje izvornog koda.
+    Dva nacina rada:
+    1. Pokrecu se odredjene komande preko termonala CLI. Comand line inteface.(powershel, cmd, bash).
+    2.Drugi nacin je koriscenjem nekog GUI( graphical user interface.)
+    --global (kaze)
+    Prvo konfigurisemo
+    git config --global user.name
+    git config --global user.email
+    cd=current directory
+    git init pravi lokalni repozitorijum.git add salje u stageing area
+    git commit
+    git push
+
+     Etape u lokalnom verzioniranju 
+     Imamo neke fajlove koje smo menjali 
+        Working Directory
+        Stageing Area/pozornica stavi se tu pa se onda vrsi comit
+            Comit komanda kaze ta i ta osoba je u tom trenutku uradila ove promene. MOze se birati koliko fajlova zelimo da menjamo. 
+
