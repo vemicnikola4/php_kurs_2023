@@ -26,4 +26,10 @@
         Working Directory
         Stageing Area/pozornica stavi se tu pa se onda vrsi comit
             Comit komanda kaze ta i ta osoba je u tom trenutku uradila ove promene. MOze se birati koliko fajlova zelimo da menjamo. 
+            Napravi mi trenutni presek kopiju. Zapamti mi ovu verziju. Vremenski trenutak koji sepamtii na koji mozemo da se vratimo. Sadrzi info:
+                ko
+                kada
+                sta je komitoovao
+                poruka
 
+    
