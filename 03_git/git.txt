@@ -24,12 +24,28 @@
      Etape u lokalnom verzioniranju 
      Imamo neke fajlove koje smo menjali 
         Working Directory
-        Stageing Area/pozornica stavi se tu pa se onda vrsi comit
+        git add => Stageing Area/pozornica stavi se tu pa se onda vrsi comit
             Comit komanda kaze ta i ta osoba je u tom trenutku uradila ove promene. MOze se birati koliko fajlova zelimo da menjamo. 
             Napravi mi trenutni presek kopiju. Zapamti mi ovu verziju. Vremenski trenutak koji sepamtii na koji mozemo da se vratimo. Sadrzi info:
                 ko
                 kada
                 sta je komitoovao
                 poruka
+        git rm --cached index.html  brisanje iz staging area
+    Git – jedan od vodećih softvera za distributivno verzionisanje izvornog koda
 
+    Git Hub sajt koji sadrzi Git(sof ya verzionisanje) i radi sa s
+    public repo je javan svako moze da vidi ali ne moze da menja. Treba dozvola da se da od strane vlasnika.
+
+    Kreiramo repo za domace i stavimo da je privat i delimo sa Stefanom i BEti.
+
+    master vs main?
+
+    License u Git Hub? 
     
+    Da povezemo lokalni repo sa repo na git hub
+    git remote add origin => git repo url
+
+    prvo pull sa servera jer je vrlo verovatno da ne radimo sami na projektu.
+
+    Pre svakog commita moramo da pullujemo sa servera da nam ucita promene koje drugi napravi pre nego sto pusujemo nase. Znaci trba nam najnovija verzija programa pre nego pusujemo. 
