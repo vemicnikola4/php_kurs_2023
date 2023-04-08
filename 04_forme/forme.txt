@@ -1,0 +1,33 @@
+Forme
+Pomocu njih preuzimamo podatke od korisnika.
+LABEL => opis kakvo polje sledi
+radio button => ajvise jedan selektovan
+
+FIELDSET tag => Grupiše elemente forme kojoj joj pripadaju u logičku celinu, nad kojom se kasnije mogu vršiti određene akcije
+
+INPUT => najcesci tag polje za unos. input:text npr precica.
+
+TEXTAREA => unos duzeg sadrzaja
+
+SELECT => padajuca lista
+
+CHECKBOX => moze vise opcija
+
+RADIOBUTTON=>najvise jedna selektovana opcija
+
+METHOD:
+dve metode slanja podataka 
+    GET
+    POST
+disabled = "disabled" . disabled=> ako se napise to je minimizacija atributa, ne preporucujese. KAd se radi submit ne salje vrednosti disabled inputi. KOristi se za Read onli polja.
+
+READONLY => atribut koji se isto dodaje formi readonly = "readonly"
+
+HIDDEN => stavljaju se na vrh forme odmah ispod taga 
+FOrme imaju specijalne feature za validaciju
+
+@ = %40 u urlu
+
+& = ampersent
+GET => klik na dugme najcesce se koristi url je ogranicen ne moze neograniceno podataka da se prosledi
+POST => za osetljive podatke na skriven nacin salje pod sa forme

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="test_foorme.php" method=""> <!--action="gde saljemo podatke" -->
+        <fieldset>
+            <legend>Osnovni podaci</legend><!-- legend za fieldset-->
+            <p><!--mozemo i u div da ih stavimo pa stilizujemo ali da skratimo stavljam ga u p-->
+                <label for="username">Username: </label>
+                <input type="text" value="" placeholder="username" name="username" id="username">
+            </p>
+            <p>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <label for="search">Pretrazi za kriterijum</label>
+                <input type="search" name="search" id="search">
+            </p>
+            <input type="hidden" name="id" value="5">
+        </fieldset>
+        <fieldset>
+            <legend>Dodatni podaci</legend>
+            <p>
+                <label for="age">Godine: </label>
+                <input type="number" name="age" id="age" min="0" max="130" step="1"><!--step podesavanje stepena promene-->
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </p>    
+        </fieldset>
+        <fieldset>
+            <legend>Datum i vreme: </legend>
+            <p>
+                <label for="date">Datum: </label>
+                <input type="date" name="date" id="" min="2000-01-01" max="2100-01-01">
+            </p>
+            <p>
+                <label for="time">Vreme: </label>
+                <input type="time" name="time" id="">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Radio button: </legend>
+            
+            <p>
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="female" value="female">Female
+                <input type="radio" name="gender" value="other"
+                id="other">Other
+            </p>
+            <p>
+                <label for="subscribe">Preplati se? </label>
+                <input type="radio" name="subscribe" value="yes" id="sub_yes" checked="checked">Yes
+                <input type="radio" name="subscribe" value="no" id="sub_no">No
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Odaberi kurs</legend>
+            <p>
+                <label for="kurs">Raspolozivi kursevi: </label>
+                <input type="checkbox" name="html" value="true" id="html">html
+                <input type="checkbox" name="css" value="true" id="css">css
+                <input type="checkbox" name="php" value="true" id="php">php
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Select grad</legend>
+            <p>
+                <label for="grad">Izaberi grad: </label>
+                <select name="city" id="city">
+                    <option value="">---</option>
+                    <option value="bg">Beograd</option>
+                    <option value="ns">Novi Sad</option>
+                    <option value="nis">Nis</option>
+                    
+                </select>
+            </p>
+            <p>
+                <label for="kurs">Izaberi kurs</label>
+                <select name="kurs" id="izaberi_kurs">
+                    <option value="">---</option>
+                    <optgroup label="Nis">
+                        <option value="php">PHP</option>
+                        <option value="css">CSS</option>
+                        <option value="html">HTML</option>
+                    </optgroup>
+                    <optgroup label="Beograd">
+                        <option value="php">PHP</option>
+                        <option value="css">CSS</option>
+                        <option value="html">HTML</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+        <!-- <input type="url" name="" id="">      obustavlja slanje neispravne adrese. Ima validaciju          -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+form div{
+    margin-top: 10px;
+    margin-top: 10px;
+}
+form label{
+    display: inline-block;
+    min-width: 150px;
+}
+form{
+    width:400px;
+    padding: 5px;
+    border: 2px double;
+}
+div.select select{
+    width: 120px;
+    height: 20px;
+}
+div.submit input{
+    padding: 8px;
+    width: 80px;
+}
+div.submit input:hover{
+    cursor: pointer;
+    background-color: beige;
+}

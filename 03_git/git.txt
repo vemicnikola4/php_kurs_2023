@@ -49,3 +49,19 @@
     prvo pull sa servera jer je vrlo verovatno da ne radimo sami na projektu.
 
     Pre svakog commita moramo da pullujemo sa servera da nam ucita promene koje drugi napravi pre nego sto pusujemo nase. Znaci trba nam najnovija verzija programa pre nego pusujemo. 
+
+    stash cuva sve promene koje nisu u comitu. Napravi skriveni fajl sa svim izmenama. Vidi objasnjenje?
+
+    Bukvalno svaki dan imamo neke zadatke koje trebamo da resimo kada smo spremni komitujemo ako se javi konflikt koji git ne moze da resi(git je pametan i resava konf ali ponekad ne moze pa moramo mi.) ja radim jedan problem kolega drugi i ond komitujemo neko to prekontrolise i odobri itd.
+
+    Git status => informativno kaze u kom stanju je nas git.
+
+KOraci u radu:
+    Kreiranje repozitorijum
+Generisanje prve osnovne verzije – master grana (inicijalni commit)
+Preuzimanje poslednje verzije sa servera
+Lokalni presek (commit)
+Rešavanje mogućih konflikta
+Prebacivanje promena sa lokala na server
+Grananje (branch) i spajanje grana
+Lokalno čuvanje izmenjenih fajlova bez komita (stash)
