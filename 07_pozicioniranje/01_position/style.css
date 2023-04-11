@@ -1,0 +1,26 @@
+div{
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 130px;
+
+}
+#d_2{
+    position: fixed;/*fixed 0 left 0 top je defoltna pozicija stycky je fibrid fixed i absoluta*/
+    top: 30%;
+    right: 300px;
+}
+#d_3{
+    position: relative;/*u odnosu na svoju normalnu poziciju*/
+    top:100px;
+}
+#d_2 h3{
+    position: absolute;/*u odnosu na svog parent elementa */
+    top: 0;
+    left: 40px;
+    margin: 0;
+}
+#d_2 p{
+    position: absolute;
+    bottom: 0;
+    margin:0;
+}

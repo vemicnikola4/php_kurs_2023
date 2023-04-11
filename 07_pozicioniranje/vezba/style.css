@@ -1,0 +1,35 @@
+header{
+    background: url('istockphoto-1349560847-170667a.jpg') center repeat;
+    height:65px;
+    position: relative;
+    margin: 0;
+}
+div{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    
+    /* position: absolute;
+    top: 0;
+    right:0; */
+
+    /*Donji desni ugao headera 
+    position: absolute;
+    bottom: 0;
+    right:0; */
+
+    /* Donji levi ugao headera 
+    position: absolute;
+    bottom: 0;
+    left:0; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    
+
+    
+}
+/*U gornjem levom po difoltu*/

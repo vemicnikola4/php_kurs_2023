@@ -1,0 +1,11 @@
+***FLOOAT***
+Tok dece svojih roditelja. Smer u kom se slazu.
+Bukvalno redjaj elemente sa ove na onu stranu. Na koji ce nacin da se prikaze element.
+FLOAT ne sluzi za centriranje.
+Kojim tokom se redjaju deca unutar roditelja
+KAd stavimo p float left a oni su unutar diva div dobija visinu. Float bukvalno cupa ove elemente iz diva i redja ih na levo. Da bi to sprecili kod parent elementa koristimo ***overflow:hidden*** 
+
+Mora da se ispostuje ovakva neka struktura.
+1. u htmlu moramo da imamo parent children struktury.
+2. Kad to imamo deci stavljamo float.
+3. A kod parenta stavjamo overfloow:hidden;

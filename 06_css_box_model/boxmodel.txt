@@ -1,0 +1,51 @@
+BOX MODEl
+Content sadrzaj htmla
+Border okvir elementa
+
+PAdding => prazan prostor izmedju bordera i contenta
+Margin => prazan prostor izvan bordera
+    po difoltu su nula,kad dodamo
+
+Box model znaci da element zauzuima prostor sa svih ovih cetiri  gore nabrojani.
+
+autoput auto = automatski izracunava koliki prostor zauzima.
+
+border style dotted dashed solid duble hidden none
+border:width style color; integralna komanda;
+
+**MARGIN***
+
+margin moze right bottom top left
+margin top bottom ne radi a inline elemente.
+
+dislplay-block sluzi da inline elemente prikazeo kao blok element.
+dislplay: inline-block ponasa se kao blok element u liniji
+
+
+
+margin integralna komanda:
+    margin krecese od 12 sati i idemo u pravcu skazljke na satu
+
+**PADDING***
+izmedju bordera i kontenta
+PAdding moze i kod inline elemenata
+
+pikseli su fiksirane jedinice za svaki ekran pa je kod responsive boljedasekoristi em rem...
+
+WIDTH i HEIGHT
+ podesava se content i samo kod blokovskih elemenata.Znaci div footer header itd. Ne moze za inline elemente a p itd.Vaze samo za kontent na to se sabira padding border margin i dobija se dimenzija celog elementa. Da bi to promenili koristimo DISPLAY.
+
+ **DISPLAY**
+ block citava sredina ek ali mu mozemo podesiti visinu
+ inline
+ inline elementima ne moze da se podesava zato menjamo dipslay nacin na kako se prikazuju
+    Blokovski el idu svaki u posebnom redu pa imamo i DISLAY: inline-block. Inline se redjaju jedan pored drugog koliko zauzme kontent pa odma pored njega drugi 
+    display: block;
+
+***!! display: block inline inline-block none. !!***
+
+INLINE BLOCK mozemo da mu podesavamo visinu sirinu ali moze da ide jedan za drugim nece da ide u novi red.
+
+enter u visual studio kodu pravi razmak na brouseru.Pa se stavi enter u komontaru.
+
+**Box-sizing***: border-box ako se ukljuci u sirinu i visinu se ukljucuje i padd i marg i border; Dok se inace samo content uzima za width i height;

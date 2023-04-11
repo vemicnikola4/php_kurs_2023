@@ -1,0 +1,16 @@
+/* 1. u htmlu moramo da imamo parent children struktury.
+2. Kad to imamo deci stavljamo float.
+3. A kod parenta stavjamo overfloow:hidden; */
+div{
+    background-color: brown;
+    overflow: hidden;
+}
+p{
+    background-color: blue;
+    float: right;/*sazmu se i idu jedan za drugim*/
+    width:220px;
+    height: 30px;
+}
+p:nth-child(2n){
+    float: left;/*parne redjaj sa leve na desnu*/
+}

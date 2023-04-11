@@ -1,0 +1,3 @@
+colspan rowspan za spajanje tabela
+npr <td colspan "3">
+Zadatak 1 slide 8 uraditi.
