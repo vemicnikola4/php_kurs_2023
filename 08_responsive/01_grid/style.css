@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+.row{/*neophodno je da svi col elementi budu obuhvaceni elementom klase row jer on imaoverfow hidden a col imaju float*/
+    width: 100%;
+    overflow: hidden;
+}
+[class*="col_"]{/*Sve klase koje pocinju sa col_ daj mu ovu osobinu*/
+    float: left;
+    width: 100%;
+}
+/*definisemo style zanajmanji uredjaj da mu tobude kao difoltno stanje prvo se uvek pise podesavanje za najmanji uredjaj. Idemo telefon tablet desctop
+    mobilni svi kolovi budu 100% */
+
+@media only screen and(min-width:){
+    
+}
+@media only screen and (min-width:1000px){/*za ekrane vece od 1000px*/
+    .col_1{/*Bitno je da klasa klase elemenata elementa clase row imaju zbir 12*/
+        width: calc(100%/12);
+    }
+    .col_2{
+        width: calc(100%/12*2);
+    }
+    .col_3{
+        width: calc(100%/12*3);
+    }
+    .col_4{
+        width: calc(100%/12*4);
+    }
+    .col_5{
+        width: calc(100%/12*5);
+    }
+    .col_6{
+        width: calc(100%/12*6);
+    }
+    .col_7{
+        width: calc(100%/12*7);
+    }
+    .col_8{
+        width: calc(100%/12*8);
+    }
+    .col_9{
+        width: calc(100%/12*9);
+    }
+    .col_10{
+        width: calc(100%/12*10);
+    }
+    .col_11{
+        width: calc(100%/12*11);
+    }
+    .col_12{
+        width: calc(100%/12*12);
+    
+    }
+}
+/*tablet*/
+@media only screen and (min-width:600px){
+    .col_t_1{/*primenjuj ovo do 600px*/
+        width: calc(100%/12);
+    }
+    .col_t_2{
+        width: calc(100%/12*2);
+    }
+    .col_t_3{
+        width: calc(100%/12*3);
+    }
+    .col_t_4{
+        width: calc(100%/12*4);
+    }
+    .col_t_5{
+        width: calc(100%/12*5);
+    }
+    .col_t_6{
+        width: calc(100%/12*6);
+    }
+    .col_t_7{
+        width: calc(100%/12*7);
+    }
+    .col_t_8{
+        width: calc(100%/12*8);
+    }
+    .col_t_9{
+        width: calc(100%/12*9);
+    }
+    .col_t_10{
+        width: calc(100%/12*10);
+    }
+    .col_t_11{
+        width: calc(100%/12*11);
+    }
+    .col_t_12{
+        width: calc(100%/12*12);
+    
+    }
+}
+
+header{
+    background-color: blueviolet;
+}
+nav{
+    background-color: blue;
+}
+aside{
+    background-color: green;
+}
+article{
+    background-color: brown;
+}
+footer{
+    background-color: aqua;
+}
+ul {
+    list-style-type: none;
+}

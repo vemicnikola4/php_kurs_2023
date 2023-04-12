@@ -3,7 +3,8 @@ Tok dece svojih roditelja. Smer u kom se slazu.
 Bukvalno redjaj elemente sa ove na onu stranu. Na koji ce nacin da se prikaze element.
 FLOAT ne sluzi za centriranje.
 Kojim tokom se redjaju deca unutar roditelja
-KAd stavimo p float left a oni su unutar diva div dobija visinu. Float bukvalno cupa ove elemente iz diva i redja ih na levo. Da bi to sprecili kod parent elementa koristimo ***overflow:hidden*** 
+KAd stavimo p float left a oni su unutar diva div dobija visinu. Float bukvalno cupa ove elemente iz diva i redja ih na levo. Da bi to sprecili kod parent elementa koristimo 
+***overflow:hidden*** (ima jos svojstva)
 
 Mora da se ispostuje ovakva neka struktura.
 1. u htmlu moramo da imamo parent children struktury.

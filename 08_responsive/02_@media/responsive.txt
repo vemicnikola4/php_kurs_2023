@@ -1,0 +1,27 @@
+***Responsive WEB DESIGNE***
+prilagodljivi web DESIGNE
+Bitno je da lepo izgleda
+
+Kako da pisemo jedan kod a da na svim uredjajima bude jednako lepo.
+CILJ Dobar izgled na svim uredjajima,sto bolji ugodjaj
+Nije samo prilagoditi vec neke sadrzaje i ugloniti
+
+Automatsko prilagodjavanje html i css elemenata sirini ekrana.
+
+css i html bi trebao da prati sirinu ekrana
+Kolika god da je sirina ekranatrebasvi elementi da se vide.
+
+@media query properties( neophodno imati meta viewport )
+
+meta name="viewport" content="width=device-width, initial-scale=1.0" => kaze prilagodjavaj sirinu contenta sirini ekrana
+Svaki meta ima svoj name
+**charset UTF8**=> da bi se mogle kvacice videti na slovima.
+
+max_width od od te vrednosti nanize(tj bukvalno kaze vazi samo dok je sirina ekrana max toliko preko toga ne vazi)
+
+min_width od od te vrednosti navise
+
+ove parametre mozemo da kombinujemo tipa ekran od 500 do 700
+
+uvek kada mozemo koristim orelativne jedinica % em rem
+

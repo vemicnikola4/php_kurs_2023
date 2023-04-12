@@ -1,0 +1,22 @@
+p{
+    font-size:24px;
+}
+img{
+    width: 50%;/*dobrp je da slike budu u procentima jel to znaci da ce uvek zauzimati toliko % ekrana koliko god sirok bio*/
+}
+@media only screen and (max-width:500px){/*do max 700px sirine ekrana primeni ovo svojstvo*/
+    img{
+        width: 100%;
+    }
+}
+@media only screen 
+and (min-width:500px)
+and(max-width:700px){
+    p{
+        color: purple;
+    }
+    img{
+        border:5px solid black;
+    }
+
+}

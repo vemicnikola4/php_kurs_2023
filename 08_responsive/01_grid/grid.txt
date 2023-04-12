@@ -1,0 +1,4 @@
+GRID 
+sluzi da se elementi na stranici poredjaju na nekoj nevidljivoj mrezi.
+Ceo ekran podeljen na 12 nekih kolona(elemenata,)
+olaksava pozicioniranje elemenata nastranici.

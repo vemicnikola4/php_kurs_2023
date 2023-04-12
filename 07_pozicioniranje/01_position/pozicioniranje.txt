@@ -4,7 +4,8 @@ Ovi tagovi viz nemaju nikakvu karakteristiku ali imaju smisaonu karakteristiku.
 Sluzi da ih stilizujemo a isto tako mozemo da damo divovima klase.
 Kako da menjamo pozicije
     POsition- specifira poziciju elemenata na stranici.
-
+    
+    position:STATIC podrazumevana vrednost
     position:FIXED fiksiramo ga u odnosu na dimenzije brousera . Koristimo bottom left right i top.
 
     position: RELATIVE u odnosu na svoju relativnu poziciju.
