@@ -1,0 +1,78 @@
+table{
+    border: solid black;
+    font-size:12px;
+    width: 500px;
+}
+tr:first-child{
+    background-color: rgb(112, 165, 182);
+    height: 25px;
+    color: red;
+}
+tr:first-child span{
+    color: green;
+}
+.dani th{
+    font-style: italic;
+    background-color:mediumaquamarine;
+}
+#hours{
+    background-color:bisque;
+    color: rgb(0, 140, 187);
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+    font-style: normal;
+
+}
+td{
+    background-color:bisque ;
+}
+.html{
+    color: blue;
+    background-color: rgb(254, 248, 236);
+}
+.php{
+    color: green;
+    background-color: rgb(254, 248, 236);
+}
+.jquery{
+    color: red;
+    background-color: rgb(254, 248, 236);
+
+}
+.css{
+    color: orangered;
+    background-color: rgb(254, 248, 236);
+
+}
+.java{
+    color: black;
+    background-color: rgb(254, 248, 236);
+
+}
+.bootstrap{
+    color: darkblue;
+    background-color: rgb(254, 248, 236);
+
+}
+.ajax{
+    color: black;
+    background-color: rgb(254, 248, 236);
+
+}
+tr:nth-child(5){
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+.project{
+    background-color: green;
+    position: relative;
+}
+.project span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: red;
+    font-weight: bold;
+}

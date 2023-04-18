@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    overflow: hidden;
+    background-color:black;
+    color: white;
+}
+header div{
+    float: left;
+}
+div#meni{
+
+    overflow: hidden;
+    width: 45%;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+div#meni ul{
+    list-style-type: none;
+    text-decoration: none;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+
+}
+div#meni ul li{
+    float: left;
+    margin-right: 18px;
+    
+
+}
+div#meni ul li:last-of-type{
+    margin-right: 0;
+}
+div#meni ul li a{
+    display: block;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+div#logo{
+    width: 20%;
+    background-color: darkblue;
+    padding: 10px 0 10px 10px;
+    height: 100%;
+    border: solid darkblue;
+
+}
+div#uloguj_registruj{
+    width: 35%;
+    background-color: darkblue;
+    padding: 10px 5px 10px 10px;
+    height: 100%;
+    border: solid darkblue;
+    text-align: end;
+
+}
+div#logo p a span{
+    font-weight: bolder;
+}

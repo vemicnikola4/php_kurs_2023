@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_vezba_forma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+   
+        
+
+    </head>
+    <body>
+        <form action="index.html" method="post">
+            <legend >Your paymant detailes</legend><br>
+            <label for="name">NAME</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="card_number">CARD NUMBER</label><br>
+            <input type="number" name="card_number" id="card_number" min="100000000000" max="999999999999"><br>
+            <label for="card_number">EXPIRATION DATE</label><br>
+            <input type="number" name="ex_month" id="ex_month"  placeholder="MM" min="1" max="12">
+            <input type="number" name="ex_year" id="ex_year" placeholder="YY" min="2023" max="2123"><br>
+            <label for="cvc">CVC</label><br>
+            <input type="number" name="cvc" id="cvc" placeholder="123" min="100" max="999"><br>
+            <input type="checkbox" name="save_card" id="save_card"><span>Save my card for future purchases </span><br>
+            <input type="submit" id="submit" value="PAY NOW">
+        </form>
+    </body>
+    </html>
+</body>
+</html>

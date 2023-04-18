@@ -1,0 +1,45 @@
+PHP UVOD 01:
+
+Za html nam nije ni trebao vs code. Mogli smo u note pad da pisemo file samo je bitno da ima .html.
+
+https:// je protokol
+DOMEN => mora da bude jedinstven, domen je alias za ip adresu. Kad kupimo domen bukvalno usmerava ka serveru koji ima odredjenu ip adresu. Isto bi dobili kad bi umesto domena ukucali ip adresu.
+
+XAMP i WAMP lokalno oponasaju server. Stim da za ip adresu koriste localhost. Podeseni su tako da traze index.php ili index.html.
+
+Ako se navede fajl isporucuje se fajl.
+Ako se ne navede file nego samo folder on pokusava da nadje index.
+Ako nema index daje sadrzaj foldera.
+Svaka app krece od index filea. U appace moze da se promeni podesavanja da trazi npr home umesto index.
+
+Brouser ne ume da cita php. Korisnok ukuca zahtev u brouser koji trazi taj sadrzaj i obraca se udaljenom serveru (ili lokalnom u nase slucaju) php server prevodi sadrzaj u html i vraca ga brouseru i korisniku.
+
+Php sepise izmedju zatvorenog i otvorenog taga. Php mozemo da mesamo sa htmlomk.
+Php omogucava da pravimo dinamicne stranice. Npr imamo app gde neko unosi vesti a nasa sranica ce samo da cita i prikazuje najnovije vesti. Ne mora neko rucno da menja html strane koji prikazuje vesti. Uzima data iz baze podataka.
+echo komanda za ispis.
+Kada unutar html strukture radimo php mozemo da kombinujemo html i php komande.
+
+Live i Five server imitiraju xamp ali nemaju sve sto nam treba zato smo trebali da 
+za short tag <??> treba dodatno podesavanje na serveru.
+Razmisljanje i resavanje problema i php sintaksa.
+
+tipovi podataka:
+1.intiger celi brojevi
+2.Float realni brojevi(decimalni zarez)
+3.String
+4.Bollen logicki true/false
+5.Array nizovi
+6.Object
+7.NULL spec vrednost dodeljuje se od programera ili racunara nista.Rzalicita od 0 ili praznog stringa...
+promenjiva nesmeda pocne brojem.
+Postoje rezervisanereci koje ne mozemo da koristimo za promenjive.
+
+Promeniva jekutijau kojoj cuvamo nesto.
+
+Dobra stvar kod PHP nije strogo tipiziran jer mi mozemo da menjamo promenjivu kako vrednost tako i njen tip. Tj iz string u int itd. Dok su neki drugi jezici tipizirani.
+
+povezivanje stringova se zove kokordinacija . je lepljenje vise stringova.
+
+**stepenovanje
+5**3 stepenovanje 5na treci tj 5*5*5.
+depricated funkcije su funkcije koje su ugasene u trenutnoj verziji php;
