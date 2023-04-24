@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 50px;
+    right: 50px;
+
+}
+ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+ul li{
+    float: left;
+    width: 25%;
+    border: 1px solid aquamarine;
+    background-color: brown;
+    text-align: center;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 0 5px 0;
+
+}
+ul li a:hover{
+    background-color: coral;
+}

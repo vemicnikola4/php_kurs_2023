@@ -43,3 +43,18 @@ povezivanje stringova se zove kokordinacija . je lepljenje vise stringova.
 **stepenovanje
 5**3 stepenovanje 5na treci tj 5*5*5.
 depricated funkcije su funkcije koje su ugasene u trenutnoj verziji php;
+
+round
+
+laracast?;
+
+larael za logovanje se koristi .. Nauci! Skracuje posao.
+Kesiranje lozinke postoje algoritmi za sifrovaje i desifrovanje.
+Algoritmi za Kesiranje u laravelu.
+Laravel jedan od najzastupljenijih frameworka.
+
+zen 
+
+yin
+
+react

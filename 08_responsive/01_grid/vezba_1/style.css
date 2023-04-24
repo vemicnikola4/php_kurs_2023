@@ -54,7 +54,7 @@
 
 }
 @media only screen and (min-width:700px){
-    .col_t_1{/*primenjuj ovo do 600px*/
+    .col_t_1{/*primenjuj ovo do 700px*/
         width: calc(100%/12);
     }
     .col_t_2{

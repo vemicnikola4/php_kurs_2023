@@ -1,0 +1,22 @@
+Naredba grananja znaci da se izvrsi kod samo u odredjenim situacijama.KOndicijal. Ako je ispunjen ovaj uslov izvrsi ovo.
+Uzima true ili false.
+Ako je ulsov false smo se nastavlja na dalje.
+
+Operatori poredjenja ==
+<=, >= ,<,>, 
+!= (<> i ovo postoji ali se ne koristi)  kontra
+kad stavimo jedno = php ne tumaci kao gresku.0 je jedina brojevna vrednost koja je jednaka false
+
+Kod operatora poredjenja vrednosti exluzivno mogu da se nadju dve vrednosti ne mogu da se lancaju. $a < $b <$c;
+
+=== i !==
+
+ispituju se i tipovi promenjivih.
+
+if moze da se pise i bez vit zagrada ali se pod if ulazi samo prva linija koda ispod ifa.
+
+& ampersent
+
+termarni operator ? Skraceno pisanje koristi se kada u htmlu hocemo da radimo neki if.
+logicki operatori
+(and &&) (|| or) ! not

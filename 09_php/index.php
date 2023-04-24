@@ -29,4 +29,8 @@
     $rez = $h * 60 + $m;
     echo "Od ponoci je proslo ".number_format($rez,0,",",".")." minuta.";
     echo "<hr>";
+    $b = 5.5464646;
+    $b = round($b, 2);
+    echo $b;
+
 ?>

@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    width: 100%;
+    overflow: hidden;
+}
+[class*="col_"]{
+    float: left;
+    width: 100%;
+}
+div.row header div{
+    text-align: center;
+    background-color: orange;
+    padding: 10px 0 10px 0;
+}
+div.row ul{
+    list-style-type: none;
+}
+div.row ul li a{
+    display: block;
+    background-color: orange;
+    height: 35px;
+    padding: 8px 0 10px 10px;
+    text-decoration: none;
+    color: black;
+}
+aside{
+    padding: 10px 0 0 10px;
+}
+div.row ul li a:hover{
+    border: solid black;
+    font-weight: bolder;
+}
+div.row img{
+    height: 250px;
+    width: 100%;
+}
+div.row img:hover{
+    opacity: 0.5;
+}
+#naslov_liste{
+    background-color: green;
+    padding: 3px;
+    text-align: center;
+}
+
+#lista{
+    background-color: blue;
+    list-style-type: disc;
+    padding: 15px 15px 15px 20px;
+
+}
+#lista li{
+    background-color: antiquewhite;
+    margin: 3px;
+}
+#pod_lista{
+    background-color: rosybrown;
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+#pod_lista li{
+    padding: 3px 0 3px 3px;
+}
+#pod_lista li:nth-child(even){
+    color: red;
+    background-color: bisque;
+}
+#pod_lista li:nth-child(odd){
+    color:green;
+    background-color: greenyellow;
+}
+table{
+    background-color: orange;
+    width: 100%;
+    font-weight: bold;
+    border: solid 1px black;
+
+}
+table td{
+    text-align: center;
+
+}
+
+table td.beli_td{
+    background-color: white;
+}
+table td.pauza{
+    background-color: aqua;
+}
+table td.ne_boldovan_td{
+    font-weight: normal;
+}
+form{
+    width: 100%;
+    overflow: hidden;
+}
+form h4{
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
+}
+form label{
+    display: inline-block;
+    width: 33.3%;
+    
+}
+form input{
+    width: 66%;
+    margin-bottom: 5px;
+
+}
+form input:focus{
+    background-color: orangered;
+}
+form textarea{
+    width: 66%;
+    height: 60px;
+}
+form input#submit{
+    background-color: orangered;
+    display: block;
+    width: 33.3%;
+    height: 35px;
+    margin-top: 10px;
+    float: right;
+    
+
+
+}
+form input#submit:hover{
+    background-color: green;
+    cursor: pointer;
+
+}
+form input#submit{
+
+}
+div.row footer div{
+    text-align: center;
+    background-color: orange;
+    padding: 10px 0 10px 0;
+}
+
+
+@media only screen and (min-width:750px){/*za ekrane vece od 1000px*/
+    .col_1{/*Bitno je da klasa klase elemenata elementa clase row imaju zbir 12*/
+        width: calc(100%/12);
+    }
+    .col_2{
+        width: calc(100%/12*2);
+    }
+    .col_3{
+        width: calc(100%/12*3);
+    }
+    .col_4{
+        width: calc(100%/12*4);
+    }
+    .col_5{
+        width: calc(100%/12*5);
+    }
+    .col_6{
+        width: calc(100%/12*6);
+    }
+    .col_7{
+        width: calc(100%/12*7);
+    }
+    .col_8{
+        width: calc(100%/12*8);
+    }
+    .col_9{
+        width: calc(100%/12*9);
+    }
+    .col_10{
+        width: calc(100%/12*10);
+    }
+    .col_11{
+        width: calc(100%/12*11);
+    }
+    .col_12{
+        width: calc(100%/12*12);
+    
+    }
+    
+    
+   
+    
+}
+@media only screen and (max-width:750px){
+    .no_tablet{
+        display: none;
+    }
+    p{
+        font-size: larger;
+        color: green;
+    }
+    div.row header div h3:hover{
+        color: green;
+    }
+}
+
+@media only screen and (min-width:600px){
+    .col_t_1{/*primenjuj ovo do 600px*/
+        width: calc(100%/12);
+    }
+    .col_t_2{
+        width: calc(100%/12*2);
+    }
+    .col_t_3{
+        width: calc(100%/12*3);
+    }
+    .col_t_4{
+        width: calc(100%/12*4);
+    }
+    .col_t_5{
+        width: calc(100%/12*5);
+    }
+    .col_t_6{
+        width: calc(100%/12*6);
+    }
+    .col_t_7{
+        width: calc(100%/12*7);
+    }
+    .col_t_8{
+        width: calc(100%/12*8);
+    }
+    .col_t_9{
+        width: calc(100%/12*9);
+    }
+    .col_t_10{
+        width: calc(100%/12*10);
+    }
+    .col_t_11{
+        width: calc(100%/12*11);
+    }
+    .col_t_12{
+        width: calc(100%/12*12);
+    
+    }
+    
+}
+@media only screen and (max-width:600px){
+    p{
+        color: black;
+    }
+    .phone{
+        display: block;
+    }
+    
+}
