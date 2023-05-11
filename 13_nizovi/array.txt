@@ -1,0 +1,8 @@
+Mozemo kreirati niz podataka.
+Gruisu vise promenjivih najednom mestu.Moze biti i prazan.
+$cars= array("Volvo","BMW","Toyota");
+indeksirani nizovi
+asocijativni nizovi 
+visedimenzionalni niz//nizovi nizova
+$cars[0]="Volvo";
+Indexi sluze da  bi pristupili

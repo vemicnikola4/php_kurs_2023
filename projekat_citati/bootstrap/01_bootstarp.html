@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Bootstrap vezbanje</title>
+</head>
+<body>
+<div class="container-fluid border border-3 border-primary">
+    <!-- display headings -->
+    <h1 class="display-1">display-1</h1>
+    <h1 class="display-2">display-2</h1>
+    <h1 class="display-3">display-3</h1>
+    <h1 class="display-4">display-4</h1>
+    <p class="display-1">display-1</p>
+
+    <!-- lead text and aligment -->
+    <p class="lead">Lead paragraph</p><!--Lead class to draw the readers attention -->
+    <p class="lead text-center">Paragraph with lead and text-center classes</p>
+    <p class="lead text-start">Paragraph with lead and text-start classes</p>
+    <p class="lead text-end">Paragraph with lead and text-end classes</p>
+
+    <!-- text decoration and font weight -->
+    <small>Small text</small>
+    <p class="text-decoration-underline">P with underline decoration</p>
+    <p class="text-decoration-line-through">P with line-through decoration</p>
+    <p class="fw-bold">Bold text</p>
+    
+    <!-- text color -->
+    <p class="text-primary">Primary class</p>
+    <p class="text-secondary">secondary class</p>
+    <p class="text-info">text-info class</p>
+    <p class="text-warning">text-warning class</p>
+    <p class="text-success">text-success class</p>
+    <p class="text-danger">text-danger class</p>
+    <p class="text-muted">text-muted class</p>
+
+    <!-- bg ( background ) color -->
+    <p class="text-white bg-primary">bg-primary text-white class</p>
+    <p class="text-white bg-secondary">bg-secondary text-white class</p>
+    <p class="text-white bg-info">bg-info text-white class</p>
+    <p class="text-white bg-warning">bg-warning text-white class</p>
+    <p class="text-white bg-success">bg-success text-white class</p>
+    <p class="text-white bg-danger">bg-danger text-white class</p>
+    <p class="text-black bg-muted">bg-muted text-black class</p>
+
+    <!-- buttons -->
+    <!-- basic buttons -->
+    <h3 class="display-3">Buttons</h3>
+
+    <button class="btn btn-primary">Button primary</button>
+    <button class="btn btn-secondary">Button secondary</button>
+    <!-- anchor tags as buttons -->
+    <h3 class="display-3">Links in buttons</h3>
+
+    <a href="" class="btn btn-info text-white">A tag btn-info class</a>
+    <a href="" class="btn btn-success text-black">A tag btn-succsess class</a>
+
+    <!-- Button sizes -->
+
+    <button class="btn btn-lg btn-danger">Buton large danger</button>
+    <button class="btn btn-sm btn-warning">Buton small warning</button>
+
+    <!-- Outline stiles -->
+    <button class="btn btn-outline-primary">Button outline primary</button>
+    <button class="btn btn-outline-success">Button outline success</button>
+    <button class="btn btn-outline-secondary btn-lg">Button outline secondary btn-lg</button>
+
+    <!-- Button groups -->
+    <!-- Kada su u grupi bootstrap stilizuje buttone malo drugacije -->
+
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary">Button 1</a>
+        <a href="#" class="btn btn-warning">Button 2</a>
+        <a href="#" class="btn btn-success">Button 3</a>
+    </div>
+    
+    <!-- Bootstrap utility classes -->
+
+    <!-- MArgin and paddings -->
+       <div class="bg-primary m-5 p-5">Large margin and padding</div> <!-- m1 - m5 small margin large margin -->
+       <div class="bg-primary m-1 p-1">Small margin and padding</div>
+       <div class="bg-primary my-3 px-5">Margin in y direction paddding in x deirection</div>
+       <div class="bg-primary mx-5 py-5">Margin in x (left right)direction paddding in y( up and down) deirection</div>
+       <!-- <div class="bg-primary mt-5 mb-5 ms-5 me-5 p-5">Large margin and padding</div> margin top bottom start end-->
+       <div class="bg-secondary mt-5 mb-5 ps-5 pe-5 pt-5">M top 5 m bottom 5 padding start 5 p end 5 p top 5</div>
+    <!-- Borders -->
+    
+    <div class="m-3 p-3 border">Default border</div>
+    <div class="m-3 p-3 border-top border-bottom">Border top and bottom defoult</div>
+    <div class="m-3 p-3 border-start border-success">Border success color at start</div>
+    <div class="m-3 p-3 border-start border-danger border-5 ">Ticker Border danger color at start</div>
+    <div class="m-3 p-3 rounded border border-success border-5">Rounded corners</div>
+    <div class="m-3 p-3 rounded-pill border border-success border-3">Rounded-pill corners</div>
+    <!-- Box shadow  -->
+
+    <div class="m-3 p-3 shadow-sm">Elements with small box shadow</div>
+    <div class="m-3 p-3 shadow-lg shadow-primary">Elements with large box shadow</div>
+    
+    <!-- Font weight -->
+    <p class="fw-bold ps-3">Bold text ps-3</p>
+    <p class="fw-bolder">Bolder text</p>
+    <p>Normal text</p>
+    <p class="fw-light">Light text</p>
+    <p class="fst-italic">Italic text</p>
+    <p class="fst-italic fw-light">Italic text light</p>
+
+    <!-- Containers -->
+    <!-- https://getbootstrap.com/docs/5.0/layout/containers/ -->
+
+    <div class="container my-5">
+        <h4 class="display-4">Normal container</h4>
+        <p class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, doloribus! Provident modi perferendis, dolores debitis suscipit distinctio optio iure sunt cupiditate inventore placeat quaerat, fugiat alias sit ad ratione aliquam!
+
+        </p>
+    </div>
+    <div class="container-fluid my-5">
+        <h4 class="display-4">Fluid container</h4>
+        <p class="fw-bold text-primary">Always 100%</p>
+        <p class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, doloribus! Provident modi perferendis, dolores debitis suscipit distinctio optio iure sunt cupiditate inventore placeat quaerat, fugiat alias sit ad ratione aliquam!
+
+        </p>
+    </div>
+    <div class="container-lg my-5">
+        <h4 class="display-4">Large container</h4>
+        <p class="fw-bold text-primary">100% until large screen then container</p>
+        <p class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, doloribus! Provident modi perferendis, dolores debitis suscipit distinctio optio iure sunt cupiditate inventore placeat quaerat, fugiat alias sit ad ratione aliquam!
+
+        </p>
+
+
+    </div>
+    <div class="container-xl my-5">
+        <h4 class="display-4">Xl container</h4>
+        <p class="fw-bold text-primary">100% until x-large screen then container</p>
+    </div>
+
+    <!-- Bootstrap grid sistem -->
+
+    
+
+</div>
+</body>
+</html>

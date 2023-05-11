@@ -1,0 +1,27 @@
+PHP ima preko 1000 ugradjenih funkcija koje suautomatski dostupne. Direktno iz skripte.
+
+-Funkcija je skup komandi koja izvrsava neki zadatak( obradi, promeni , izracuna, koriguje itd.).
+-Blok komandi koje obavljaju neki ceo zadatak.
+-U razlic prog jezicima funkcije se mogu zvati i podprogrami, procedure, rutine, metodi... 
+-Lakse organizovanje u okviru programa
+-Povecavaju kvalitet i pouzdanost programa
+-Program se lakse odrzava
+-Stedi vreme i resurse.
+
+-Ne izvrsava se po ucitavanju stranice i to kad se pozove. Ne bitno sto je napisana negde.
+
+-Funkcija moze pozivati i samu sebe rekurzivne funkcije.
+    mora da ima izlaz iz te rekurzije. Dosta ovakvih funkcija moze da se resi petljama.
+-Mozemo da pravimo svoje biblioteke funkcija koje mozemo koristiti u razlicitim projektima.
+-Funkcije mogu pozivati i neke druge funkcije.
+
+-Ime funcije pocinje malim slovom ili donjim crtom ne moze brojem.Ime mora da bude jedinstveno najcesce opisuje sta funkcija radi.
+-U zagradama prosledjujemo parametre function bla_bla( $name ) nisu obavezni kao i povratna vrednost. Blok naredni obavezan( telo funkcije );
+ -Promenjive unutar funkcije su lokalne promenjive i ne vide se izvan funkcije.
+ -A regularne promenjive nazivamo globalnim ne vaze unutar funkcije ako ih ne prosledimo kao parametar.
+ -Parametri mogu biti obavezni ili neobavezni za neobavezne stavljamo function ime_prezime ( $obavezan , $neobaveza = null ){
+    ndvn;
+ }
+
+ **Opis funkcije 
+ 

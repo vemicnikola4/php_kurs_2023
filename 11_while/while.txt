@@ -1,0 +1,18 @@
+While petlja
+(for, foreach ide dalje)
+Ciklusi(petlje, loops).
+sve dok je uslov true izvrsava se block naredbi.
+Kada zelimo da se neki kod izvrsava vise puta  uzastopno.
+
+While izvrsava blok(odredjenu grupu naredbi) naredbi sve dok uslov nije zadovoljen.
+beskonacna petlja 
+$i zato sto je na eng iterator?
+
+Pitanje sa while dokle ce se vrteti ova petlja?
+Sve dok je uslov tacan izvrsavaj kod.
+max_excution_time ako je petljabez izlaza ovaj max kaze ako se ne izvrsi kod za ne znam koliko prekini ga.
+
+While se koristi kada imamo uslov a ne znamo kad ce da se ispuni.
+
+While se okrece ako je ispunjen uslov.
+Imamo i dowhile uradi mi nesto pa ispitaj da li je ispunjen uslov. Znaci izvrsice kod bar jednom.

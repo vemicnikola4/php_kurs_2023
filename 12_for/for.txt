@@ -1,0 +1,9 @@
+Sluzi da bi odredjeni blok naredbi izvravali odredjeni broj puta.
+While sve dok je neki uslov tacan.
+For znamo koliko ce se puta izvrsiti.
+Prvi par inicijalizacij drugi uslov treci korekcija brojacaa.
+for ( $i = 0; $i < 50; $i++ ){
+    telo petlje.
+}
+$i iterator;
+inicijalizacija se u for moze izostaviti i da bude $i pre for kao u whileu. Kao i korekciju isto ispod izvrsene naredbe.

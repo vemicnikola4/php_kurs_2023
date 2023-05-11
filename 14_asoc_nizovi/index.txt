@@ -1,0 +1,9 @@
+Niz koji umesto brojeva kao index ima neki string
+Indeksi se zovu kljucevi. Neke proizvoljne vrednosti.
+Svaki el niza ima svoj kljuc i ima svoju vrednost.
+
+$key index a val vrednost.Za svaki el niza $god uhvati mi kljuc $key i vrednost $val. Za svaki element niza pozovi ovaj blok naredbi. Vrti mi ovu petlju sve dok $age ima vrednosti ili kljuc. Nema uslova. => Ovo je strelica.
+
+foreach ( $age as $i ) moze i bez vrednosti 
+prodji redom kroz sve elemente niza.
+dobar je i kad nisu svi indexi redom nego ima rupa

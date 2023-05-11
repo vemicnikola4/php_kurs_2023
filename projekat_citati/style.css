@@ -1,0 +1,66 @@
+<style>
+.carousel-item{
+    height: 30rem;
+    background-color:777 ;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+
+}
+
+.ljubav{
+    background-color: lightcoral;
+    
+}
+.zdravlje{
+    background-color: rgb(26, 166, 149);
+
+}
+.posao{
+    background-color: rgb(90, 158, 181);
+}
+.motivacija{
+    background-color: rgb(187, 117, 187);
+}
+footer{
+   position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer div p{
+    font-weight: 1000;
+}
+.n_ljubav{
+    color: lightcoral;
+}
+.n_zdravlje{
+    color: rgb(26, 166, 149);
+
+}
+.n_posao{
+    color: rgb(90, 158, 181);
+}
+.n_motivacija{
+    color: rgb(187, 117, 187);
+}
+
+</style>
