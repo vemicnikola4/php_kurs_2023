@@ -27,7 +27,7 @@
 }
 
 .ljubav{
-    background-color: lightcoral;
+    background-color: rgb(247, 61, 61);
     
 }
 .zdravlje{
@@ -49,18 +49,9 @@ footer{
 footer div p{
     font-weight: 1000;
 }
-.n_ljubav{
-    color: lightcoral;
-}
-.n_zdravlje{
-    color: rgb(26, 166, 149);
-
-}
-.n_posao{
-    color: rgb(90, 158, 181);
-}
-.n_motivacija{
-    color: rgb(187, 117, 187);
+#text_citata {
+    border-top: 2px solid gray;
+    padding-top: 0.8em;
 }
 
 </style>

@@ -77,7 +77,7 @@ include_once("style.css");
             <!-- toggle button for mobile nav -->
             <div class="navbar-light">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
             </div>
 
@@ -110,31 +110,31 @@ include_once("style.css");
 
     <!-- HEADER -->
 
-    <header>
-        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"  >
-            <div class="carousel-indicators pb-3">
+    <header class="bg-light ">
+        <div id="carouselExampleControls" class="carousel slide container-md carousel-fade " data-ride="carousel"  >
+            <div class="carousel-indicators pb-3 ">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="30">
+            <div class="carousel-inner  ">
+                <div class="carousel-item active mt-2">
                     <div class="overlay-image" style="background-image:url(<?php echo "./images/img".$citati."_".$a.".png";?>)"></div>
-                    <div class="container">
+                    <div class="container ">
                     <div class="carousel-caption d-none d-md-block">
                         <?php
                          echo "<h5 class='fw-bolder lead pb-3 fs-1  shadow-sm '>".ucfirst("$citati")."</h5>"?>
                     </div>
                     </div>
                 </div>
-                <div class="carousel-item ">
+                <div class="carousel-item  mt-2">
                     <div class="overlay-image" style="background-image:url(<?php echo "./images/img".$citati."_".$b.".png";?>)"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <?php
                          echo "<h5 class='fw-bolder lead pb-3 fs-1  shadow-sm '>".ucfirst("$citati")."</h5>"?>
                     </div>
                     </div>
-                <div class="carousel-item ">
+                <div class="carousel-item  mt-2">
                     <div class="overlay-image" style="background-image:url(<?php echo "./images/img".$citati."_".$c.".png";?>)">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
@@ -157,13 +157,13 @@ include_once("style.css");
 
     // ***SECTION CITATI***
     
-    echo "<section id='citat' class='$citati'>";
+    echo "<section id='citat' class='bg-light'>";
         echo '<div class="container-lg">';
             echo '<div class="row justify-content-center align-items-center">';
                 echo '<div class="col-md-5 text-center  py-5">';
                     $index = mt_rand( 0, count($niz_citati)-1);
-                    echo "<p  id='text_citata' class='fst-italic text-white fw-bolder fs-2 my-3'>".$niz_citati[$index]."</p>";
-                    echo "<p class='autor text-white fw-bold fs-4'>- ".$niz_autori[$index]." -</p>";
+                    echo "<p  id='text_citata' class='fst-italic  border-top-5 fw-bolder fs-2 my-3'>".$niz_citati[$index]."</p>";
+                    echo "<p id='autor' class='fw-bold fs-4'>- ".$niz_autori[$index]." -</p>";
                 echo "</div>";
             echo "</div>";
         echo "</div>";
@@ -173,7 +173,10 @@ include_once("style.css");
 
     echo "<footer class='$citati border border-top-white '>";
         echo "<div class='footer text-center text-white fw-bolder lead  pt-3 pb-1.5 '>";
-            echo "<p>".date('D')." ".date ( 'd/m/y H:i')." h</p>";
+            $ind = date('w');
+            $dani = ['Nedelja','Ponedeljak','Utorak','Sreda','Četvrtak','Petak','Subota'];
+            $dan = $dani[$ind];
+            echo "<p>$dan ".date ( 'd/m/y H:i')." h</p>";
         echo '</div>';
     echo  "</footer>";
 ?>
