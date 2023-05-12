@@ -65,9 +65,9 @@ include_once("style.css");
     ?>
 
     <!-- ***NAVIGATION MENU*** -->
-        <?php
-        echo "<nav class='navbar navbar-expand-md  $citati'>"
-        ?>
+    <?php
+    echo "<nav class='navbar navbar-expand-md  $citati'>"
+    ?>
         <div class="container-xxl">
             <a href="index.php" class="navbar-brand">
                 <span class="fw-bolder fs-2 text-white d-none d-md-inline">
@@ -121,25 +121,29 @@ include_once("style.css");
                 <div class="carousel-item active mt-2">
                     <div class="overlay-image" style="background-image:url(<?php echo "./images/img".$citati."_".$a.".png";?>)"></div>
                     <div class="container ">
-                    <div class="carousel-caption d-none d-md-block">
-                        <?php
-                         echo "<h5 class='fw-bolder lead pb-3 fs-1  shadow-sm '>".ucfirst("$citati")."</h5>"?>
-                    </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <?php
+                            echo "<h5 class='fw-bolder lead pb-3 fs-1 '>".ucfirst("$citati")."</h5>"?>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item  mt-2">
                     <div class="overlay-image" style="background-image:url(<?php echo "./images/img".$citati."_".$b.".png";?>)"></div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <?php
-                         echo "<h5 class='fw-bolder lead pb-3 fs-1  shadow-sm '>".ucfirst("$citati")."</h5>"?>
+                    <div class="container ">
+                        <div class="carousel-caption d-none d-md-block">
+                            <?php
+                            echo "<h5 class='fw-bolder lead pb-3 fs-1 '>".ucfirst("$citati")."</h5>"?>
+                        </div>
                     </div>
-                    </div>
+                </div>
                 <div class="carousel-item  mt-2">
                     <div class="overlay-image" style="background-image:url(<?php echo "./images/img".$citati."_".$c.".png";?>)">
                     </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <?php
-                         echo "<h5 class='fw-bolder lead pb-3 fs-1  shadow-sm '>".ucfirst("$citati")."</h5>"?>
+                    <div class="container ">
+                        <div class="carousel-caption d-none d-md-block">
+                            <?php
+                            echo "<h5 class='fw-bolder lead pb-3 fs-1 '>".ucfirst("$citati")."</h5>"?>
+                        </div>
                     </div>
                 </div>
             </div>
