@@ -19,6 +19,32 @@ include_once("style.css");
     <?php
     if ( isset ( $_GET['citati']) ){
         $citati = $_GET['citati'];
+        // $txt_to_array = file ( "$citati.txt" );
+        // $niz_citati = [];
+        // $niz_autori = [];
+        // for ( $i = 0; $i < count ( $txt_to_array ); $i++ ){
+        //     if ( $i %2 == 0 ){
+        //         array_push ( $niz_citati , $txt_to_array[$i]);
+        //     }else{
+        //         array_push ( $niz_autori , $txt_to_array[$i]);
+        //         }
+        //     }
+        }else{
+            $fajlovi = ['ljubav','motivacija','posao','zdravlje'];
+            $a = mt_rand(0,count($fajlovi)-1);
+            $citati = $fajlovi[$a];
+
+            // $txt_to_array = file ( "$citati.txt" );
+            // $niz_citati = [];
+            // $niz_autori = [];
+            // for ( $i = 0; $i < count ( $txt_to_array ); $i++ ){
+            //     if ( $i %2 == 0 ){
+            //         array_push ( $niz_citati , $txt_to_array[$i]);
+            //     }else{
+            //         array_push ( $niz_autori , $txt_to_array[$i]);
+            //     }
+            // }
+        }
         $txt_to_array = file ( "$citati.txt" );
         $niz_citati = [];
         $niz_autori = [];
@@ -29,22 +55,7 @@ include_once("style.css");
                 array_push ( $niz_autori , $txt_to_array[$i]);
                 }
             }
-        }else{
-            $fajlovi = ['ljubav','motivacija','posao','zdravlje'];
-            $a = mt_rand(0,count($fajlovi)-1);
-            $citati = $fajlovi[$a];
-
-            $txt_to_array = file ( "$citati.txt" );
-            $niz_citati = [];
-            $niz_autori = [];
-            for ( $i = 0; $i < count ( $txt_to_array ); $i++ ){
-                if ( $i %2 == 0 ){
-                    array_push ( $niz_citati , $txt_to_array[$i]);
-                }else{
-                    array_push ( $niz_autori , $txt_to_array[$i]);
-                }
-            }
-        }
+            
         $a = mt_rand ( 1,6 );
         for ( $i = 0; $i < 3; $i++){
             $b = mt_rand( 1,6 );

@@ -266,6 +266,7 @@ function najniza_temp_2( $temp , $dani ){
 }
 $dani = ['Pon','Uto','Sre','Cet','Pet'];
 najniza_temp_2( $temperature , $dani );
-//projekat:
-//U folderu domaci zadaci
+
+
+
 ?>

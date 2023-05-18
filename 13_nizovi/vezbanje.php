@@ -182,7 +182,7 @@ for ( $i = 0; $i < count( $niz ); $i++ ){
 }
 echo "<p>***Zad 15.***</p>";
 // Odrediti element u nizu stringova sa najvećom dužinom.
-$niz = [ 'Nikola', 'Milica', 'Pavle', 'Milenko', 'Ćira' , 'Dušan' ]; 
+$niz = [ 'Nikola', 'Milica', 'Pavle', 'Milenko', 'Ćira' , 'Dušan' ];
 $najduzi = $niz[0];
 for ( $i = 1; $i < count( $niz ); $i++ ){
     if ( mb_strlen( $niz[$i],"UTF-8" ) > mb_strlen( $najduzi, "UTF-8" ) ){
@@ -194,11 +194,11 @@ echo "<p>Najduzi element niza je  $najduzi</p>";
 
 echo "<p>***Zad 16.***</p>";
 // Odrediti broj elemenata u nizu stringova čija je dužina veća od prosečne dužine svih stringova u nizu.
-$niz = [ 'Nikola', 'Milica', 'Pavle', 'Milenko', 'Ćira' , 'Dušan' ]; 
+$niz = [ 'Nikola', 'Milica', 'Pavle', 'Milenko', 'Ćira' , 'Dušan' ];
 $duzina_svih_imena = 0;
 for ( $i = 0; $i < count( $niz ); $i++ ){
     $duzina_svih_imena += mb_strlen($niz[$i], "UTF-8" );
-    
+
 }
 $prosecna_duzina = $duzina_svih_imena / count( $niz );
 $count = 0;
@@ -206,13 +206,13 @@ for ( $i = 0; $i < count( $niz ); $i++ ){
     if( mb_strlen($niz[$i], "UTF-8" ) > $prosecna_duzina ){
         $count++;
     }
-    
+
 }
 echo "<p>Broj elemenata cije duzina je duza od prosecne duzine elemenata $prosecna_duzina ; je $count</p>";
 
 echo "<p>***Zad 17.***</p>";
 // Odrediti broj elemenata u nizu stringova koji sadrže slovo 'a'. *
-$niz = [ 'Nikola', 'Milica', 'Pavle', 'Milenko', 'Ćira' , 'Dušan','Andrija' ]; 
+$niz = [ 'Nikola', 'Milica', 'Pavle', 'Milenko', 'Ćira' , 'Dušan','Andrija' ];
 $count = 0;
 for ( $i = 0; $i < count( $niz ); $i++ ){
     if  ( strpos ( $niz[$i],"a") !== false){
@@ -234,18 +234,122 @@ echo "<p> Broj imena koji pocinju sa a je $count</p>";
 
 echo "<p>***Zad 19.***</p>";
 // Na osnovu celobrojnog niza $a[0], $a[1], … formirati niz $b[0], $b[1], ... koji sadrži samo pozitivne brojeve.
-$a= [5,14,-4,91,0,11,-7,9,91];
-$b = [];
-for ( $i = 0; $i < count( $a ); $i++ ){
-    if ( $a[$i] > 0 ){
-        array_push ( $b , $a[$i] );
-    }
-}
-print_r( $b );
+// $a= [5,14,-4,91,0,11,-7,9,91];
+// $b = [];
+// for ( $i = 0; $i < count( $a ); $i++ ){
+//     if ( $a[$i] > 0 ){
+//         array_push ( $b , $a[$i] );
+//     }
+// }
+// print_r( $b );
 // array_pop( $b );
 // echo "<br>";
 // print_r( $b );
 // array_shift( $b );
 // echo "<br>";
 // print_r( $b );
+
+echo "<p>***Zad 19.***</p>";
+// Dati su nizovi
+// $a[0], $a[1], …, $a[n - 1] i
+// $b[0], $b[1], …, $b[n - 1].
+// Formirati niz $c[0], $c[1], …, $c[2n – 1] čiji su elementi
+// $a[0], $b[0], $a[1], $b[1], …, $a[n - 1], $b[n - 1].
+
+$a = [2,8,55,7,95,55,66,77,1,2,3,4,5];
+$b = [62,7,75,12,30,44];
+if ( count( $a ) >= count ( $b ) ){
+    $d = count( $a );
+}else{
+    $d = count( $b );
+}
+
+$c = [];
+for ( $i = 0 ; $i < $d  ; $i++ ){
+    if ( $i > ( count( $a ) - 1) ){
+        array_push ( $c,$b[$i]);
+    }elseif($i > (count( $b ) - 1)) {
+        array_push ( $c, $a[$i]);
+    }else{
+        array_push ( $c, $a[$i],$b[$i]);
+    }
+}
+print_r ($c);
+echo "<p>***Zad 19. drugo shvatanje trazenog***</p>";
+// Dati su nizovi
+// $a[0], $a[1], …, $a[n - 1] i
+// $b[0], $b[1], …, $b[n - 1].
+// Formirati niz $c[0], $c[1], …, $c[2n – 1] čiji su elementi
+// $a[0], $b[0], $a[1], $b[1], …, $a[n - 1], $b[n - 1].
+$n = 6;
+$a = [];
+$b = [];
+for ( $i = 0; $i < $n; $i++ ){
+    array_push( $a , mt_rand(1,20));
+    array_push( $b , mt_rand(1,20));
+}
+print_r( $a );
+echo "<br>";
+print_r( $b );
+$c = [];
+for ( $i = 0; $i <  $n; $i++ ){
+    array_push( $c , $a[$i], $b[$i]);
+}
+echo "<hr>";
+print_r( $c ) ;
+
+echo "<p>***Zad 20.***</p>";
+// Dati su nizovi 
+// $a[0], $a[1], …, $a[n - 1] i  
+// $b[0], $b[1], …, $b[n - 1]. 
+// Formirati niz $c[0], $c[1], …, $c[n – 1] čiji su elementi 
+// $a[0] * $b[0], $a[1] * $b[1], …, $a[n – 1] * $b[n – 1].
+$a = [2,8,55,7,95,55,66,77,1,2,3,4,5];
+$b = [62,7,75,12,30,44];
+
+$a = [1,2];
+$b = [1,2,3,4,5];
+$c = [];
+if ( count( $a ) >= count ( $b ) ){
+    $d = count( $a );
+}else{
+    $d = count( $b );
+}
+for ( $i = 0; $i < $d; $i++ ){
+    if ( $i > count( $a ) - 1 ){
+        array_push( $c , $b[$i] );
+    }elseif( $i > count( $b ) - 1 ){
+        array_push( $c , $a[$i] );
+    }else{
+        array_push( $c , ($a[$i] * $b[$i])  );
+
+    }
+}
+print_r ($c);
+
+echo "<p>***Zad 20. drugo resenje***</p>";
+// Dati su nizovi 
+// $a[0], $a[1], …, $a[n - 1] i  
+// $b[0], $b[1], …, $b[n - 1]. 
+// Formirati niz $c[0], $c[1], …, $c[n – 1] čiji su elementi 
+// $a[0] * $b[0], $a[1] * $b[1], …, $a[n – 1] * $b[n – 1].
+$a = [2,8,55,7,95,55];
+$b = [62,7,75,12,30,44];
+$n = count ( $a );
+$c = [];
+for ( $i = 0; $i < $n ; $i++ ){
+    array_push( $c ,( $a[$i]*$b[$i]));
+}
+print_r( $c ) ;
+echo "<p>***Zad 21.***</p>";
+// Na osnovu niza $a[0], $a[1], …, $a[2n - 1] formirati niz $b[0], $b[1], …, $b[n - 1].po formuli
+// a[i] + a[2n - 1] / 2
+$a = [2,8,55,7];
+$n = count( $a );
+$b = [];
+for ( $i = 0; $i < count( $a ); $i++ ){
+    array_push( $b, round((( $a[$i] + ( 2 * $n - 1 ))/2)));
+}
+print_r( $b ) ;
+
 ?>
