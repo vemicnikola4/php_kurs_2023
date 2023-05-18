@@ -16,14 +16,12 @@
 // 8 Dan je nepovoljan ako je razlika između neka dva uzastopna merenja veća od 8 stepeni. Napisati funkciju nepovoljan($dan) kojoj se prosleđuje dan, a koja vraća true ukoliko je dan bio nepovoljan, u suprotnom vraća false.
 // 9 Za dan se kaže da je neuobičajen ako je bilo kiše i ispod -5 stepeni, ili bilo oblačno i iznad 25 stepeni, ili je bilo i kišovito i oblačno i sunčano. Napisati funkciju neuobicajen($dan) kojoj se prosleđuje dan, a koja vraća true ukoliko je dan bio neuobičajen, u suprotnom vraća false.
 
-
 $dan = [
     "datum" => "2023/05/16",
     "kisa" => true,
     "sunce" => true,
-    "oblacno" => false,
-    // "temperature" => [15,17,18,22,23,24]
-    "temperature" => [25,28,30,32,22]
+    "oblacno" => true,
+    "temperature" => [5,17,18,22,23,24]
 ];
 for ( $i = 0; $i < count( $dan['temperature']); $i++ ){
     echo $dan['temperature'][$i] . ", ";
@@ -152,6 +150,45 @@ if ( nepovoljan ( $dan ) ){
     echo "<p>Dan je bio nepovoljan.</p>";
 }else{
     echo "<p>Dan je bio povoljan.</p>";
+
+}
+// 10. Za dan se kaže da je neuobičajen ako je bilo kiše i ispod -5 stepeni, ili bilo oblačno i iznad 25 stepeni, ili je bilo i kišovito i oblačno i sunčano. Napisati funkciju neuobicajen($dan) kojoj se prosleđuje dan, a koja vraća true ukoliko je dan bio neuobičajen, u suprotnom vraća false.
+
+function neuobicajan( $dan ){
+    $neuobicajan = false;
+    $ispod_5 = false;
+    $iznad_25 = false;
+    for ( $i =0; $i < count($dan['temperature']);$i++){
+        if ( $dan['temperature'][$i] < -5 ){
+            $ispod_5 = true;
+            break;
+        }
+    }
+    if ( $dan['kisa'] == true  && $ispod_5 == true ){
+        $neuobicajan = true;
+        return $neuobicajan;
+    }
+    for ( $i =0; $i < count($dan['temperature']);$i++){
+        if ( $dan['temperature'][$i] > 25 ){
+            $iznad_25 = true;
+            break;
+        }
+    }
+    if ( $dan['oblacno'] == true && $iznad_25 ==true ){
+        $neuobicajan = true;
+        return $neuobicajan;
+    }
+    if ( $dan['oblacno'] == true && $dan['kisa'] == true && $dan['sunce'] == true){
+        $neuobicajan = true;
+        return $neuobicajan;
+    }
+    return $neuobicajan;
+}
+
+if(neuobicajan( $dan )){
+    echo "<p>Neuobicajan je dan</p>";
+}else{
+    echo "<p>Dan je bio neuobicajan</p>";
 
 }
 ?>
