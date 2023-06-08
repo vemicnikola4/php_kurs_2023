@@ -86,7 +86,11 @@ stanje($cena, $kolicina);
 
 function prvo_ponudi($cena, $kolicina){
     $max_vrednost = $cena['jabuke'] * $kolicina['jabuke'];
-    $najskuplje_voce ="Jabuke";
+    $najskuplje_voce ="";
+    foreach ( $cena as $key => $val ){
+        echo $key;
+        break;
+    }
     foreach ( $cena as $key => $val ){
         if ( $cena[$key] * $kolicina[$key] > $max_vrednost ){
             $max_vrednost = $cena[$key] * $kolicina[$key];
@@ -125,4 +129,6 @@ function vrednost_kupovine($cena, $kolicina, $kupovina){
 };
 
 echo "<p>Ukupna cena koju kupac treba da plati je ".vrednost_kupovine($cena, $kolicina, $kupovina)."</p>";
+
+
 ?>

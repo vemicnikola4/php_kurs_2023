@@ -27,7 +27,7 @@
 
 // Dat je niz stabala sa njihovim visinama (visina ne mora nužno biti ceo broj). Na nekoj
 // visini od nivoa tla pušta se testera koja prolazi kroz redom kroz sva stabla u nizu.
-$stabla = [ 10.5,4,4,16,5,7];
+$stabla = [ 10.5,4,4,16,5,7,11,18,21,17];
 
 // ➢ (10 poena) Napisati funkciju brojNeposecenihStabala($stabla,
 // $testera) kojoj se prosleđuje niz sa visinama stabala, kao i visina na kojoj se
@@ -73,6 +73,7 @@ echo "<p>Testera se pusta na visinu $testera m, ukupno je poseceno ". ukupno_pos
 // posečenih stabala [8.2, 6.6] i [5.1, 6.6, 13.5], a dužina maksimalnog niza jednaka
 // je 3.
 
+// [ 10.5,4,4,16,5,7,11,18,21,17]; 4 
 function max_duzina( $stabla, $testera ){
     $najduzi_niz = 0;
     $max_niz = 0;

@@ -1,0 +1,41 @@
+OOP
+Grupisanje podataka u klase
+POjednostavljuje kod
+Olaksava resavanje gresaka
+
+Klasa je pojam apstrakcija
+Objekti su konkretne realizacije tog pojma.
+
+Klasa ima odredjena polja i metode
+
+Pravimo objekat i svaki ce imati ova polja i klase.
+Klasa Pas{
+    rasa, velicinu, boja,
+}
+Objekti su promenjive koje imaju ova polja.
+Pored polja imace i metode( jede, spava, trci );
+Metode su neke funkcionalnosti klase.
+
+Klasa – korisnički tip podatka, koji se sastoji od:
+
+Podataka (polja ili atributi)
+Funkcija (metode).
+
+Objekti instanca => su realizacije klase.
+Nepisano  pravilo da klasepocinju velikim slovom. Ugradjene funkcije pocinju malim pa da bise razlikovalo
+
+The var keyword creates a property in a class. Since PHP 5, it is equivalent to the public keyword.
+
+The var keyword is only used for compatibility reasons. Since PHP 5, the keywords private, protected and public should be used instead.
+
+U svakoj metodi moguće je referencirati objekat koji poziva datu metodu preko promenljive $this.
+Za pristup poljima nekog objekta unutar metode potrebno je najpre pozvati objekat koji je pozvao metodu, a potom polje, i to sa:
+$this->ime_polja(atributa);
+
+Nivoi pristupa (tacno kontrolisemo sta je dozvoljeno da se radi sa klasom)
+    Public => Poljima se moze pristupiti unutar ali i izvan klase. Da menjamo atribut objektu direktno(izvan klase)
+    private => Zabranjujemo pristup nekom polju ili metodi van klase,
+    privatna funkcija pravi se da bi je pozivali u klasi i sa njom radili. Ne moze se pozvati izvan klase
+
+Metode za čitanje vrednosti polja – geteri.
+Metode za izmenu vrednosti polja – seteri.

@@ -1,9 +1,0 @@
-OPen source php framework.
-Object oriented PHP needed.
-Laravel is maintaine.
-Most PHP agencies use some kind of framework.
-Much faster to develop something.
-Autentication and emailing much faster to build in your own program.
-Laravel 9 is up.
-9 supports PHP 8.0.
-anonymous stub migration?

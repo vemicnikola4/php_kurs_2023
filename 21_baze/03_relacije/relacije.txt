@@ -1,0 +1,103 @@
+Skup nekih tabela kopje su povezane.
+Omogucuju nam dopunske stvari u vezi tabela.
+Relacije nam omogućuju da opišemo veze između različitih tabela u bazama podataka. 
+
+1:1 1-1 veza 
+Ako imamo usere i ako imamo tabelu za neke dodatne podatke o userima. Kao dopuna podataka. jedna osoba ima jedan nalog.
+Samo one osobe koje imaju nalog imaju jos jedan dodatan red u dodatnoj tabeli
+1:N 1-N podatak iz jedne tabele moze da ima vise tipova detalja u nekoj drugoj tabeli.
+Osoba i kontakt. Jedna osoba ne mora da ima samo jedan br tel vec moze da ima vise tabela. Jedna osoba ima vise broja telefona ali jedan telefon pripada jednoj osobi.
+
+N-M N:M 
+Jedna osoba moze da ima 
+Dva najcesca tipa organizacije
+MyISAM 
+    Zaključavanje na nivou tabele(dva korisnika ne mogu da menjaju podatke u isto vreme)
+
+    Ne podržava strane ključeve(ne moze da se doda strani kljuc)
+
+    Ne podržava transakcije(Transakcija znaci da on pravi kopiju baze ako insert 60 reedova i na 59om pukne on je moze da vrati tih 60 redova MyIsam to ne zna ovaj drugi da)
+
+    Brzina - Koristi se za statične tabele u smislu da nemaju mnogo brisanja i ažuriranja ali ima puno upita nad podacima
+    (koristi se za staticne baze gde se retko sta insertuje vec radimo SELECT komande)
+InnoDb
+    Zaključavanje na nivou reda(ako dva zaposlena menjaju neke podatke zakljucava se na nivou reda)
+
+    Bolje performanse prilikom obrade velike količine podataka
+    ()
+    Podržava strane ključeve
+
+    Podržava transakcije(pravi trenutnu kopiju baze)
+
+    Kada primarni ključ iz jedne tabele upotrebimo u drugoj tabeli (radi prepoznavanja podataka iz prve), takav podatak nosi naziv strani ključ – foreign key.
+
+DODACANJE STRANOG KLJUCA
+**Prilikom definisanja stranog ključa obe tabele moraju biti InnoDB tabele, 
+**dok tip podataka kolona primarnog i stranog ključa moraju da se poklapaju npr VARCHAR (50).!
+
+UNSIGNED polje
+
+auto increment se koristi za PRIMARY KEY.
+
+MORAJU OBE TABELE DA BUDU InnoDB!!
+
+Prilikom kreiranja polja foreign key na podatak koji je UNSIGNED PRIMARY KEY I AUTOINCREMENT autoincrement se ne navodi za FOREIGN KEY
+InnoDB se osigurava da veza zaista postoji da za foreignkEY postoji odgovarajuci pkey
+InnoDB odbija bilo koju INSERT ili UPDATE operaciju za strani ključ ukoliko ne postoji podatak o primarnom ključu iste vrednosti
+ 
+
+BITNO!!
+Sta se desava kada se brise red sa primarnim kljucom sta se desava sa tabelom gde je foreign key dal se brise dal zabranjuje da se obrise.
+
+Akcija koju preduzima InnoDB za bilo koju UPDATE ili DELETE operaciju nad primarnim ključem koji ima vezu sa stranim ključem zavisi od referencijalne akcije specificirane korišćenjem ON UPDATE i ON DELETE podklauzula u FOREIGN KEY klauzuli
+
+**SINTAKSA
+CREATE TABLE table1(
+   id int NOT NULL,
+   PRIMARY KEY (id)
+) ENGINE= InnoDB; 
+
+CREATE TABLE table2(
+	…
+    table1_id int,
+    CONSTRAINT table2_fk1 FOREIGN KEY (table1_id ) 
+    REFERENCES table1(id) 
+    ON UPDATE CASCADE ON DELETE NO ACTION
+) ENGINE= InnoDB;  
+//CONSTRAINT(naziv stranog kljuca).//ako ne dodelimo ime baza ce ga sama dodeliti
+//Na nivou cele baze naziv stranog kljuca mora biti jedinstven
+//naziv konkretne tabele i naziv polja za koji se vezuje
+//ON UPDATE CASCADE ON DELETE NO ACTION(opcionomoze i bez toga)
+
+ALTER TABLE table2
+ADD CONSTRAINT table2_fk1 
+FOREIGN KEY (table1_id) REFERENCES table1(id) 
+ON UPDATE CASCADE ON DELETE NO ACTION; 
+
+
+ALTER TABLE table2
+DROP FOREIGN KEY table2_fk1;
+
+
+ON DELETE reference_option
+ON UPDATE reference_option
+
+reference_option:
+CASCADE – automatski briše ili menja vrednost(kada brises osobu brisi i kontakt).
+SET NULL – postavlja strani ključ na null(brisem osobu a kontakt ostaje ali se za strani kljuc pos0tavlja NULL. Ne gubimo br telefona ali gubimo info kome taj tel pripada)
+RESTRICT  / NO ACTION – obustavlja operaciju brisanja/izmene u roditeljskoj tabeli ( ne moze da obrise osobu sve dok kontakt postoji.Ako ne postavimo primenjuje ovaj RESTRICT / NO ACTION ne dozvoljava nam da brisemo ili da update.)
+Za UPDATE isto vazi.
+Najcesce se na ON UPDATE koristi CASCADE.
+ZA ON DELITE zavisi od slucaja.
+
+***VEZA 1:1***
+Korisnimo onda kada se svaki zapis prve tabele uklapa sa tačno jednim zapisom druge tabele.
+Umesto dodavanja kolone u tabeli kada taj podatak nece imati svaki red u tabeli. Onda je bolje da izmestimo tu kolonu u novu tabelu.
+Ovaj tip relacije se retko koristi jer je jednostavnije podatke iz ove dve tabele iskombinovati i napraviti jednu tabelu.
+Primer kad osoba ima samo jedan broj telefona a nije obavezan mozemo da ga izmestimo u novu tabelu gde imamo id_osobe i broj telefona.
+
+Zamislite postojanje jedne društvene mreže u kojoj želimo da omogućimo da svaki korisnik ima tačno jedan profil.
+Za ovo nam je potrebna 1 : 1 relacija.
+
+U tabeli profil možemo da imamo SAMO JEDAN zapis sa korisnik_id. Ne bi bilo moguće napraviti još jedan zapis sa istim korisnik_id u tabeli profil.
+Neponavljanje korisnik_id u tabeli profil realizujemo tako što polje korisnik_id u tabeli profil treba da bude UNIQUE.

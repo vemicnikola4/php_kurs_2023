@@ -1,0 +1,64 @@
+//staticko polje i metoda se vezuje za klasu
+//konstanta je staticko javno polje koja se vezuje za klasu i ne moze mu se menjaati vrednost.
+//Skladisti i upravlja podatcima
+//Nas zaadtak za narednih podataka
+ //SQL Structured Query Language(siguel)
+ //jezik za upravljanje relacionom bazom podataka, od samog kreiranja baze do kreiranja, menjanja i uzimanja podataka koji se nalaze u bazi.
+
+ //MySQL je softver kojim upravljamo bazom podataka.
+
+ //KOmande su u sqlu
+ //PHP bukvalno kaze serveru pokreni te i te komande koje ce da mi dohvate te i te podatke.
+
+    **Komande u SQLu
+ 1. DDL Data Definition Language-
+    create, alter, drop
+2. DML Data Manipulation Language
+    Select,Insert, Update, Delete
+3. DCL Data control Language
+    Grabt, Revoke
+
+
+//Vrlo strukuirane baze ( ne mozemo bas da ubacujemo podatke kako mi zelimo.)
+//Postoje jasna pravila kako se struktuiraju podatci.
+//Svaka baza se sastoji iz tabela 
+    //npr prodavnica
+    //custumer
+    //employees
+    //orders
+    //tabele se sastoje od redova.
+--Biranje baze podataka
+--u PHP my admin kada kliknemo na bazu on u pozadini pokrene tu komandu.
+--neophodno da se zada ova komanda da bi znao 
+USE  test_druga;
+
+CREATE DATABASE skola;
+CHARACTER SET utf16 COLLATE utf16_slovenian_ci;
+
+USE skola;
+-- //Kreiranje tabele studenti
+--razlika izmedju CHAR i VARCHAR . CHAR (50) rezervise memoriju za 50 karaktera i nije ga briga koliko mi karaktera unesemo dok je VARCHAR prilagoddljiv. Koristimo CHAR 
+--koristimo npr TYNIINT umesto BIGINT ako smo sigurni da ce opseg TYNIINT obuhvatiti vrednost jer stedimo memoriju.
+--kad navedemo tip podataka on zauzme memoriju rezervisanu za podatak kojem je taj red namenjen.
+ CREATE TABLE studenti(
+    ime VARCHAR ( 50 ),
+    prezime VARCHAR ( 50 )
+);
+--Baze tabele kolone i redovi
+--SQL ogranicenja 
+--NOT NULL kad su nam neka polja obavezna
+--UNIQUE sve vrednosti u koloni moradu da budu razliciti npr
+--email ne sme da se ponovi za dva reda. Za dve osobe.
+-- PRIMARY KEY (NOT NULL i UNIQUE u kombinaciji )-> na koji nacin se jedan red razlikuje od drugog.
+-- CHECK – Proverava da sve vrednosti u koloni zadovoljavaju određeni uslov.
+-- DEFAULT – Postavlja podrazumevanu vrednost za kolonu kada vrednost nije navedena.
+-- INDEX – Koristi se za brzo dobijanje informacija iz tabele
+-- FOREIGN KEY
+
+
+Primarni kljuc treba da ima svaka tabela
+    Način da se na jedinstven način odredi svaki red u tabeli.
+    PRIMARY KEY = NOT NULL + UNIQUE
+    Svaka tabela bi trebalo da ima primarni ključ!
+    Primarni ključ je JEDINSTVEN, ali može se sastojati od jedne ili više kolona.
+    id  automatski da se uvecava, racuna. Primarni kljuc treba da bude neko polje koje na jedinstven nacin oznacava neko polje.
